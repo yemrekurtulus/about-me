@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Yunus Emre Kurtuluş — Kişisel portfolyo ve CV sitesi. Projeler, sertifikalar ve daha fazlası." />
+  <title>Portfolyo | Yunus Emre Kurtuluş</title>
+
+  <!-- Google Fonts — Inter (modern, clean) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== ANIMATED BACKGROUND ORBS ========== -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Yunus Emre Kurtuluş</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Ana Sayfa</a></li>
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#sertifikalar">Sertifikalar</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT WRAPPER ========== -->
+  <main id="mainContent">
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <h1>
+            Yunus Emre Kurtuluş<br />
+            <span class="accent"></span>
+          </h1>
+          <p>
+            Yazılım geliştirme, yapay zekâ ve modern web teknolojileri ile yenilikçi
+            çözümler üreten bir bilgisayar mühendisi adayıyım. Projelerime ve sertifikalarıma göz atabilirsiniz.
+          </p>
+          <div class="hero-actions">
+            <a href="#projeler" class="btn btn-primary">Projeleri Gör ↓</a>
+            <a href="#iletisim" class="btn btn-outline">İletişime Geç</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HAKKIMDA ========== -->
+    <section id="hakkimda">
+      <div class="container">
+        <h2 class="section-title reveal">Hakkımda</h2>
+
+        <div class="about-wrapper reveal">
+          <!-- Avatar -->
+          <div class="about-avatar">
+            <div class="avatar-ring">
+              <div class="avatar-inner">
+                <img src="foto/ben.png" alt="Yunus Emre Kurtuluş" class="hakkimda-resim" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="about-text glass-card">
+            <h3>Merhaba! 👋</h3>
+            <p>
+              Ben Yunus Emre Kurtuluş. 2003 doğumluyum ve eğitimime Karabük Üniversitesi Bilgisayar Mühendisliği
+              bölümünde devam
+              ediyorum. </p>
+            <p>
+              Yazılım dünyasında sürekli yeni şeyler öğrenmekten keyif alıyor; okulda üzerine çalıştığım algoritma,
+              veritabanı ve yazılım geliştirme gibi teorik bilgileri sadece derste bırakmayıp pratiğe dökmeyi çok
+              seviyorum. Bu amaçla boş zamanlarımda kendimi test etmek ve edindiğim bilgileri somutlaştırmak için web
+              siteleri ve masaüstü uygulamaları gibi çeşitli kişisel projeler geliştiriyorum.
+
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJELER ========== -->
+    <section id="projeler">
+      <div class="container">
+        <h2 class="section-title reveal">Projeler</h2>
+        <p class="section-subtitle reveal">
+          Üzerinde çalıştığım bazı projeler. Her biri farklı bir problemi çözmeye odaklanıyor.
+        </p>
+
+        <div class="projects-grid">
+
+          <!-- ===== Proje 1 — Adalet Hukuk Bürosu ===== -->
+          <div class="glass-card project-card reveal">
+            <!-- Auto-Slider Image Area -->
+            <div class="card-slider"
+              data-images='["foto/3.png","foto/33.png","foto/333.png","foto/3333.png","foto/3333333333.png","foto/Ekran görüntüsü 2026-04-08 004447.png"]'>
+              <div class="slider-track">
+                <img src="foto/3.png" alt="Adalet Hukuk Bürosu Görsel 1" class="slider-img active" />
+                <img src="foto/33.png" alt="Adalet Hukuk Bürosu Görsel 2" class="slider-img" />
+                <img src="foto/333.png" alt="Adalet Hukuk Bürosu Görsel 3" class="slider-img" />
+                <img src="foto/3333.png" alt="Adalet Hukuk Bürosu Görsel 4" class="slider-img" />
+                <img src="foto/3333333333.png" alt="Adalet Hukuk Bürosu Görsel 5" class="slider-img" />
+                <img src="foto/Ekran görüntüsü 2026-04-08 004447.png" alt="Adalet Hukuk Bürosu Görsel 6"
+                  class="slider-img" />
+              </div>
+              <!-- Slider dots -->
+              <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3>Adalet Hukuk Bürosu ve Randevu Sistemi</h3>
+
+              <h4>Bu Proje Ne İşe Yarar?</h4>
+              <p>
+                Müvekkillerin sisteme kayıt olarak ihtiyaç duydukları uzmanlık alanındaki avukatları bulabileceği,
+                sepete ekleyerek online danışmanlık randevusu oluşturabileceği tam kapsamlı bir platform.
+                Aynı zamanda yöneticilerin; kullanıcı onaylarını, randevuları, siparişleri ve toplam gelirleri
+                tek bir ekrandan kolayca yönetebilmesini sağlar.
+              </p>
+
+              <h4>Hangi Teknolojileri Kullandım?</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn btn-gallery" onclick="openGallery(0)">🔍 Projeye Göz At</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Proje 2 — Merkezi Yönetim ===== -->
+          <div class="glass-card project-card reveal">
+            <!-- Auto-Slider Image Area -->
+            <div class="card-slider" data-images='["foto/11.PNG","foto/1.PNG","foto/111.PNG","foto/1111.PNG"]'>
+              <div class="slider-track">
+                <img src="foto/11.PNG" alt="Merkezi Yönetim Görsel 1" class="slider-img active" />
+                <img src="foto/1.PNG" alt="Merkezi Yönetim Görsel 2" class="slider-img" />
+                <img src="foto/111.PNG" alt="Merkezi Yönetim Görsel 3" class="slider-img" />
+                <img src="foto/1111.PNG" alt="Merkezi Yönetim Görsel 4" class="slider-img" />
+              </div>
+              <!-- Slider dots -->
+              <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3>Merkezi Yönetim ve Analiz Sistemi</h3>
+
+              <h4>Bu Proje Ne İşe Yarar?</h4>
+              <p>
+                Şirket çalışanlarının kayıtlarını tutmak, onlara projeler atamak ve şirket verilerini
+                detaylı grafiklerle analiz etmek için geliştirilmiş kapsamlı bir masaüstü programı.
+                İçerisinde yetki tabanlı giriş sistemi, insan kaynakları istatistikleri (yaş, cinsiyet,
+                şehir dağılımları) ve muhasebe takibi gibi gelişmiş bölümler barındırıyor.
+              </p>
+
+              <h4>Hangi Teknolojileri Kullandım?</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Windows Forms</span>
+                <span class="tech-tag">Veritabanı (SQL)</span>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn btn-gallery" onclick="openGallery(1)">🔍 Projeye Göz At</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Proje 3 — Güvenli Ağ İletişimi ===== -->
+          <div class="glass-card project-card reveal">
+            <!-- Auto-Slider Image Area (tek görsel) -->
+            <div class="card-slider" data-images='["foto/2.PNG"]'>
+              <div class="slider-track">
+                <img src="foto/2.PNG" alt="Güvenli Ağ İletişimi Görsel" class="slider-img active" />
+              </div>
+              <!-- Slider dots (tek dot) -->
+              <div class="slider-dots">
+                <span class="dot active"></span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3>Güvenli Ağ İletişimi ve Hata Tespit Sistemi</h3>
+
+              <h4>Bu Proje Ne İşe Yarar?</h4>
+              <p>
+                Bir bilgisayardan diğerine gönderilen mesajların yolda (ağ üzerinde) bozulup bozulmadığını
+                veya araya giren biri tarafından değiştirilip değiştirilmediğini anlayan bir güvenlik simülasyonu.
+                Mesajlara özel matematiksel kontroller (Parity, Checksum, CRC) ekleyerek verinin karşı tarafa
+                hatasız ulaştığından emin olmayı sağlar.
+              </p>
+
+              <h4>Hangi Teknolojileri Kullandım?</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Sockets</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Veri Güvenliği Algoritmaları</span>
+              </div>
+
+              <div class="card-footer">
+                <button class="btn btn-gallery" onclick="openGallery(2)">🔍 Projeye Göz At</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERTİFİKALAR ========== -->
+    <section id="sertifikalar">
+      <div class="container">
+        <h2 class="section-title reveal">Sertifikalar</h2>
+        <p class="section-subtitle reveal">
+          Sürekli öğrenme yolculuğumda kazandığım sertifikalar ve başarılar.
+        </p>
+
+        <div class="certs-grid" id="certsGrid">
+
+          <!-- Sertifika 1 -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-img-wrap" onclick="openCertLightbox(0)">
+              <img src="foto/Yunus Emre Kurtuluş - Frontend NextJS.jpg" alt="Frontend NextJS Sertifikası" />
+            </div>
+            <h4>Frontend NextJS</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 2 -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-img-wrap" onclick="openCertLightbox(1)">
+              <img src="foto/Yunus Emre Kurtuluş - Veri Tabanı ve Erişimi Microsoft SQL Server Database Management.jpg"
+                alt="Microsoft SQL Server Database Management Sertifikası" />
+            </div>
+            <h4>Microsoft SQL Server Database Management</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 3 -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-img-wrap" onclick="openCertLightbox(2)">
+              <img src="foto/Yunus Emre Kurtuluş - Yapay Zeka (AI) Teknolojisi.jpg"
+                alt="Yapay Zeka (AI) Teknolojisi Sertifikası" />
+            </div>
+            <h4>Yapay Zeka (AI) Teknolojisi</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 4 -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-img-wrap" onclick="openCertLightbox(3)">
+              <img src="foto/Yunus Emre Kurtuluş - Programlama Araçları Git  GitHub.jpg"
+                alt="Programlama Araçları: Git & GitHub Sertifikası" />
+            </div>
+            <h4>Programlama Araçları: Git &amp; GitHub</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 5 -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-img-wrap" onclick="openCertLightbox(4)">
+              <img src="foto/Yunus Emre Kurtuluş - JavaScript - JSON  AJAX ve WebApi Kullanımı.jpg"
+                alt="JavaScript: JSON, AJAX ve WebApi Sertifikası" />
+            </div>
+            <h4>JavaScript: JSON, AJAX ve WebApi</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 6 -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-img-wrap" onclick="openCertLightbox(5)">
+              <img src="foto/Yunus Emre Kurtuluş - Programlama ve Algoritma Console Programming.jpg"
+                alt="Programlama ve Algoritma: Console Programming Sertifikası" />
+            </div>
+            <h4>Programlama ve Algoritma: Console Programming</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 7 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(6)">
+              <img src="foto/Yunus Emre Kurtuluş - Frontend JQUERY-AJAX.jpg"
+                alt="Frontend: JQUERY & AJAX Sertifikası" />
+            </div>
+            <h4>Frontend: JQUERY &amp; AJAX</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 8 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(7)">
+              <img src="foto/Yunus Emre Kurtuluş - JavaScript - Nesneler.jpg"
+                alt="JavaScript: Nesneler (Objects) Sertifikası" />
+            </div>
+            <h4>JavaScript: Nesneler (Objects)</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 9 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(8)">
+              <img src="foto/Yunus Emre Kurtuluş - Yapay Zeka ile Hayatınızı Değiştirecek Yöntemler.jpg"
+                alt="Yapay Zeka ile Hayatınızı Değiştirecek Yöntemler Sertifikası" />
+            </div>
+            <h4>Yapay Zeka ile Hayatınızı Değiştirecek Yöntemler</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 10 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(9)">
+              <img src="foto/Yunus Emre Kurtuluş - İş İngilizcesi.jpg" alt="İş İngilizcesi Sertifikası" />
+            </div>
+            <h4>İş İngilizcesi</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 11 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(10)">
+              <img src="foto/Yunus Emre Kurtuluş - Skillsoft ile Liderlik - Kişisel Gelişim.jpg"
+                alt="Skillsoft ile Liderlik ve Kişisel Gelişim Sertifikası" />
+            </div>
+            <h4>Skillsoft ile Liderlik ve Kişisel Gelişim</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 12 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(11)">
+              <img src="foto/Yunus Emre Kurtuluş - Teknoloji Okuryazarlığı.jpg"
+                alt="Teknoloji Okuryazarlığı Sertifikası" />
+            </div>
+            <h4>Teknoloji Okuryazarlığı</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 13 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(12)">
+              <img src="foto/Yunus Emre Kurtuluş - Kendini İfade Etme Gücü Sessizlikleri Kır  Anla  Anlaşıl.jpg"
+                alt="Kendini İfade Etme Gücü Sertifikası" />
+            </div>
+            <h4>Kendini İfade Etme Gücü</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 14 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(13)">
+              <img src="foto/Yunus Emre Kurtuluş - JavaScript - Nesneler (1).jpg"
+                alt="JavaScript: Nesneler - Temel Kavramlar Sertifikası" />
+            </div>
+            <h4>JavaScript: Nesneler - Temel Kavramlar</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+          <!-- Sertifika 15 (gizli) -->
+          <div class="glass-card cert-card reveal hidden-cert">
+            <div class="cert-img-wrap" onclick="openCertLightbox(14)">
+              <img src="foto/Yunus Emre Kurtuluş - Programlama Araçları Git  GitHub (1).jpg"
+                alt="Git & GitHub: İleri Seviye Kullanım Sertifikası" />
+            </div>
+            <h4>Git &amp; GitHub: İleri Seviye Kullanım</h4>
+            <p>Kurum Adı: Fibabanka Akademi</p>
+          </div>
+
+        </div>
+
+        <!-- Toggle Button -->
+        <div class="certs-toggle-wrap reveal">
+          <button class="btn btn-certs-toggle" id="certsToggleBtn" onclick="toggleCerts()">
+            Daha Fazla Sertifika Gör 📜
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER / İLETİŞİM ========== -->
+  <footer class="footer" id="iletisim">
+    <div class="container">
+      <h2 class="section-title reveal" style="font-size: 1.8rem;">İletişim</h2>
+
+
+      <div class="footer-links reveal">
+        <a href="mailto:yunusemre.kurtulus2003@gmail.com">📧 E-posta</a>
+        <a href="https://www.linkedin.com/in/yunus-emre-kurtuluş-4a4310292?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank" rel="noopener">💼 LinkedIn</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========== LIGHTBOX GALLERY MODAL (Projeler + Sertifikalar) ========== -->
+  <div class="lightbox-overlay" id="lightboxOverlay">
+    <div class="lightbox-container">
+      <!-- Close button -->
+      <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">✕</button>
+
+      <!-- Left arrow -->
+      <button class="lightbox-arrow lightbox-arrow-left" id="lightboxPrev" aria-label="Önceki">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Image display -->
+      <div class="lightbox-image-wrap">
+        <img src="" alt="Galeri Görseli" class="lightbox-image" id="lightboxImage" />
+      </div>
+
+      <!-- Right arrow -->
+      <button class="lightbox-arrow lightbox-arrow-right" id="lightboxNext" aria-label="Sonraki">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 6 15 12 9 18"></polyline>
+        </svg>
+      </button>
+
+      <!-- Image counter -->
+      <div class="lightbox-counter" id="lightboxCounter">1 / 6</div>
+    </div>
+  </div>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script src="script.js"></script>
+</body>
+
+</html>
