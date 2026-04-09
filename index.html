@@ -33,12 +33,19 @@
       <a href="#hero" class="nav-logo">Yunus Emre Kurtuluş</a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Ana Sayfa</a></li>
-        <li><a href="#hakkimda">Hakkımda</a></li>
-        <li><a href="#projeler">Projeler</a></li>
-        <li><a href="#sertifikalar">Sertifikalar</a></li>
-        <li><a href="#iletisim">İletişim</a></li>
+        <li><a href="#hero" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+        <li><a href="#hakkimda" data-tr="Hakkımda" data-en="About Me">Hakkımda</a></li>
+        <li><a href="#projeler" data-tr="Projeler" data-en="Projects">Projeler</a></li>
+        <li><a href="#sertifikalar" data-tr="Sertifikalar" data-en="Certificates">Sertifikalar</a></li>
+        <li><a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a></li>
       </ul>
+
+      <!-- Language Toggle Switch -->
+      <div class="lang-switch" id="langToggle" role="button" tabindex="0" aria-label="Dil Değiştir / Switch Language">
+        <span class="lang-option" id="langTR">TR</span>
+        <span class="lang-option" id="langEN">EN</span>
+        <span class="lang-slider" id="langSlider"></span>
+      </div>
 
       <!-- Mobile hamburger -->
       <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat">
@@ -61,13 +68,14 @@
             Yunus Emre Kurtuluş<br />
             <span class="accent"></span>
           </h1>
-          <p>
+          <p data-tr="Yazılım geliştirme, yapay zekâ ve modern web teknolojileri ile yenilikçi çözümler üreten bir bilgisayar mühendisi adayıyım. Projelerime ve sertifikalarıma göz atabilirsiniz."
+             data-en="I am a computer engineering student creating innovative solutions with software development, artificial intelligence, and modern web technologies. Feel free to explore my projects and certificates.">
             Yazılım geliştirme, yapay zekâ ve modern web teknolojileri ile yenilikçi
             çözümler üreten bir bilgisayar mühendisi adayıyım. Projelerime ve sertifikalarıma göz atabilirsiniz.
           </p>
           <div class="hero-actions">
-            <a href="#projeler" class="btn btn-primary">Projeleri Gör ↓</a>
-            <a href="#iletisim" class="btn btn-outline">İletişime Geç</a>
+            <a href="#projeler" class="btn btn-primary" data-tr="Projeleri Gör ↓" data-en="View Projects ↓">Projeleri Gör ↓</a>
+            <a href="#iletisim" class="btn btn-outline" data-tr="İletişime Geç" data-en="Get in Touch">İletişime Geç</a>
           </div>
         </div>
       </div>
@@ -76,7 +84,7 @@
     <!-- ========== HAKKIMDA ========== -->
     <section id="hakkimda">
       <div class="container">
-        <h2 class="section-title reveal">Hakkımda</h2>
+        <h2 class="section-title reveal" data-tr="Hakkımda" data-en="About Me">Hakkımda</h2>
 
         <div class="about-wrapper reveal">
           <!-- Avatar -->
@@ -90,12 +98,14 @@
 
           <!-- Content -->
           <div class="about-text glass-card">
-            <h3>Merhaba! 👋</h3>
-            <p>
+            <h3 data-tr="Merhaba! 👋" data-en="Hello! 👋">Merhaba! 👋</h3>
+            <p data-tr="Ben Yunus Emre Kurtuluş. 2003 doğumluyum ve eğitimime Karabük Üniversitesi Bilgisayar Mühendisliği bölümünde devam ediyorum."
+               data-en="I'm Yunus Emre Kurtuluş. I was born in 2003 and I'm currently pursuing my degree in Computer Engineering at Karabük University.">
               Ben Yunus Emre Kurtuluş. 2003 doğumluyum ve eğitimime Karabük Üniversitesi Bilgisayar Mühendisliği
               bölümünde devam
               ediyorum. </p>
-            <p>
+            <p data-tr="Yazılım dünyasında sürekli yeni şeyler öğrenmekten keyif alıyor; okulda üzerine çalıştığım algoritma, veritabanı ve yazılım geliştirme gibi teorik bilgileri sadece derste bırakmayıp pratiğe dökmeyi çok seviyorum. Bu amaçla boş zamanlarımda kendimi test etmek ve edindiğim bilgileri somutlaştırmak için web siteleri ve masaüstü uygulamaları gibi çeşitli kişisel projeler geliştiriyorum."
+               data-en="I enjoy constantly learning new things in the software world. I love putting theoretical knowledge — such as algorithms, databases, and software development — that I study at school into practice, not just leaving it in the classroom. To that end, in my spare time I develop various personal projects like websites and desktop applications to test myself and solidify my knowledge.">
               Yazılım dünyasında sürekli yeni şeyler öğrenmekten keyif alıyor; okulda üzerine çalıştığım algoritma,
               veritabanı ve yazılım geliştirme gibi teorik bilgileri sadece derste bırakmayıp pratiğe dökmeyi çok
               seviyorum. Bu amaçla boş zamanlarımda kendimi test etmek ve edindiğim bilgileri somutlaştırmak için web
@@ -112,8 +122,9 @@
     <!-- ========== PROJELER ========== -->
     <section id="projeler">
       <div class="container">
-        <h2 class="section-title reveal">Projeler</h2>
-        <p class="section-subtitle reveal">
+        <h2 class="section-title reveal" data-tr="Projeler" data-en="Projects">Projeler</h2>
+        <p class="section-subtitle reveal" data-tr="Üzerinde çalıştığım bazı projeler. Her biri farklı bir problemi çözmeye odaklanıyor."
+           data-en="Some of the projects I've worked on. Each one focuses on solving a different problem.">
           Üzerinde çalıştığım bazı projeler. Her biri farklı bir problemi çözmeye odaklanıyor.
         </p>
 
@@ -145,17 +156,18 @@
             </div>
 
             <div class="card-body">
-              <h3>Adalet Hukuk Bürosu ve Randevu Sistemi</h3>
+              <h3 data-tr="Adalet Hukuk Bürosu ve Randevu Sistemi" data-en="Justice Law Firm & Appointment System">Adalet Hukuk Bürosu ve Randevu Sistemi</h3>
 
-              <h4>Bu Proje Ne İşe Yarar?</h4>
-              <p>
+              <h4 data-tr="Bu Proje Ne İşe Yarar?" data-en="What Does This Project Do?">Bu Proje Ne İşe Yarar?</h4>
+              <p data-tr="Müvekkillerin sisteme kayıt olarak ihtiyaç duydukları uzmanlık alanındaki avukatları bulabileceği, sepete ekleyerek online danışmanlık randevusu oluşturabileceği tam kapsamlı bir platform. Aynı zamanda yöneticilerin; kullanıcı onaylarını, randevuları, siparişleri ve toplam gelirleri tek bir ekrandan kolayca yönetebilmesini sağlar."
+                 data-en="A comprehensive platform where clients can register, find lawyers in their needed area of expertise, add them to their cart, and create online consultation appointments. It also allows administrators to easily manage user approvals, appointments, orders, and total revenues from a single dashboard.">
                 Müvekkillerin sisteme kayıt olarak ihtiyaç duydukları uzmanlık alanındaki avukatları bulabileceği,
                 sepete ekleyerek online danışmanlık randevusu oluşturabileceği tam kapsamlı bir platform.
                 Aynı zamanda yöneticilerin; kullanıcı onaylarını, randevuları, siparişleri ve toplam gelirleri
                 tek bir ekrandan kolayca yönetebilmesini sağlar.
               </p>
 
-              <h4>Hangi Teknolojileri Kullandım?</h4>
+              <h4 data-tr="Hangi Teknolojileri Kullandım?" data-en="Technologies Used">Hangi Teknolojileri Kullandım?</h4>
               <div class="tech-tags">
                 <span class="tech-tag">HTML</span>
                 <span class="tech-tag">CSS</span>
@@ -164,7 +176,7 @@
               </div>
 
               <div class="card-footer">
-                <button class="btn btn-gallery" onclick="openGallery(0)">🔍 Projeye Göz At</button>
+                <button class="btn btn-gallery" onclick="openGallery(0)" data-tr="🔍 Projeye Göz At" data-en="🔍 View Project">🔍 Projeye Göz At</button>
               </div>
             </div>
           </div>
@@ -189,25 +201,26 @@
             </div>
 
             <div class="card-body">
-              <h3>Merkezi Yönetim ve Analiz Sistemi</h3>
+              <h3 data-tr="Merkezi Yönetim ve Analiz Sistemi" data-en="Central Management & Analytics System">Merkezi Yönetim ve Analiz Sistemi</h3>
 
-              <h4>Bu Proje Ne İşe Yarar?</h4>
-              <p>
+              <h4 data-tr="Bu Proje Ne İşe Yarar?" data-en="What Does This Project Do?">Bu Proje Ne İşe Yarar?</h4>
+              <p data-tr="Şirket çalışanlarının kayıtlarını tutmak, onlara projeler atamak ve şirket verilerini detaylı grafiklerle analiz etmek için geliştirilmiş kapsamlı bir masaüstü programı. İçerisinde yetki tabanlı giriş sistemi, insan kaynakları istatistikleri (yaş, cinsiyet, şehir dağılımları) ve muhasebe takibi gibi gelişmiş bölümler barındırıyor."
+                 data-en="A comprehensive desktop application developed to manage employee records, assign projects to them, and analyze company data with detailed charts. It features role-based authentication, human resources statistics (age, gender, city distributions), and advanced accounting tracking modules.">
                 Şirket çalışanlarının kayıtlarını tutmak, onlara projeler atamak ve şirket verilerini
                 detaylı grafiklerle analiz etmek için geliştirilmiş kapsamlı bir masaüstü programı.
                 İçerisinde yetki tabanlı giriş sistemi, insan kaynakları istatistikleri (yaş, cinsiyet,
                 şehir dağılımları) ve muhasebe takibi gibi gelişmiş bölümler barındırıyor.
               </p>
 
-              <h4>Hangi Teknolojileri Kullandım?</h4>
+              <h4 data-tr="Hangi Teknolojileri Kullandım?" data-en="Technologies Used">Hangi Teknolojileri Kullandım?</h4>
               <div class="tech-tags">
                 <span class="tech-tag">C#</span>
                 <span class="tech-tag">Windows Forms</span>
-                <span class="tech-tag">Veritabanı (SQL)</span>
+                <span class="tech-tag" data-tr="Veritabanı (SQL)" data-en="Database (SQL)">Veritabanı (SQL)</span>
               </div>
 
               <div class="card-footer">
-                <button class="btn btn-gallery" onclick="openGallery(1)">🔍 Projeye Göz At</button>
+                <button class="btn btn-gallery" onclick="openGallery(1)" data-tr="🔍 Projeye Göz At" data-en="🔍 View Project">🔍 Projeye Göz At</button>
               </div>
             </div>
           </div>
@@ -226,25 +239,26 @@
             </div>
 
             <div class="card-body">
-              <h3>Güvenli Ağ İletişimi ve Hata Tespit Sistemi</h3>
+              <h3 data-tr="Güvenli Ağ İletişimi ve Hata Tespit Sistemi" data-en="Secure Network Communication & Error Detection System">Güvenli Ağ İletişimi ve Hata Tespit Sistemi</h3>
 
-              <h4>Bu Proje Ne İşe Yarar?</h4>
-              <p>
+              <h4 data-tr="Bu Proje Ne İşe Yarar?" data-en="What Does This Project Do?">Bu Proje Ne İşe Yarar?</h4>
+              <p data-tr="Bir bilgisayardan diğerine gönderilen mesajların yolda (ağ üzerinde) bozulup bozulmadığını veya araya giren biri tarafından değiştirilip değiştirilmediğini anlayan bir güvenlik simülasyonu. Mesajlara özel matematiksel kontroller (Parity, Checksum, CRC) ekleyerek verinin karşı tarafa hatasız ulaştığından emin olmayı sağlar."
+                 data-en="A security simulation that detects whether messages sent from one computer to another have been corrupted in transit (over the network) or tampered with by an intermediary. It ensures data integrity by applying mathematical checks (Parity, Checksum, CRC) to messages, verifying error-free delivery.">
                 Bir bilgisayardan diğerine gönderilen mesajların yolda (ağ üzerinde) bozulup bozulmadığını
                 veya araya giren biri tarafından değiştirilip değiştirilmediğini anlayan bir güvenlik simülasyonu.
                 Mesajlara özel matematiksel kontroller (Parity, Checksum, CRC) ekleyerek verinin karşı tarafa
                 hatasız ulaştığından emin olmayı sağlar.
               </p>
 
-              <h4>Hangi Teknolojileri Kullandım?</h4>
+              <h4 data-tr="Hangi Teknolojileri Kullandım?" data-en="Technologies Used">Hangi Teknolojileri Kullandım?</h4>
               <div class="tech-tags">
                 <span class="tech-tag">Sockets</span>
                 <span class="tech-tag">C#</span>
-                <span class="tech-tag">Veri Güvenliği Algoritmaları</span>
+                <span class="tech-tag" data-tr="Veri Güvenliği Algoritmaları" data-en="Data Security Algorithms">Veri Güvenliği Algoritmaları</span>
               </div>
 
               <div class="card-footer">
-                <button class="btn btn-gallery" onclick="openGallery(2)">🔍 Projeye Göz At</button>
+                <button class="btn btn-gallery" onclick="openGallery(2)" data-tr="🔍 Projeye Göz At" data-en="🔍 View Project">🔍 Projeye Göz At</button>
               </div>
             </div>
           </div>
@@ -256,8 +270,9 @@
     <!-- ========== SERTİFİKALAR ========== -->
     <section id="sertifikalar">
       <div class="container">
-        <h2 class="section-title reveal">Sertifikalar</h2>
-        <p class="section-subtitle reveal">
+        <h2 class="section-title reveal" data-tr="Sertifikalar" data-en="Certificates">Sertifikalar</h2>
+        <p class="section-subtitle reveal" data-tr="Sürekli öğrenme yolculuğumda kazandığım sertifikalar ve başarılar."
+           data-en="Certificates and achievements earned throughout my continuous learning journey.">
           Sürekli öğrenme yolculuğumda kazandığım sertifikalar ve başarılar.
         </p>
 
@@ -269,7 +284,7 @@
               <img src="foto/Yunus Emre Kurtuluş - Frontend NextJS.jpg" alt="Frontend NextJS Sertifikası" />
             </div>
             <h4>Frontend NextJS</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 2 -->
@@ -279,7 +294,7 @@
                 alt="Microsoft SQL Server Database Management Sertifikası" />
             </div>
             <h4>Microsoft SQL Server Database Management</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 3 -->
@@ -288,8 +303,8 @@
               <img src="foto/Yunus Emre Kurtuluş - Yapay Zeka (AI) Teknolojisi.jpg"
                 alt="Yapay Zeka (AI) Teknolojisi Sertifikası" />
             </div>
-            <h4>Yapay Zeka (AI) Teknolojisi</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="Yapay Zeka (AI) Teknolojisi" data-en="Artificial Intelligence (AI) Technology">Yapay Zeka (AI) Teknolojisi</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 4 -->
@@ -298,8 +313,8 @@
               <img src="foto/Yunus Emre Kurtuluş - Programlama Araçları Git  GitHub.jpg"
                 alt="Programlama Araçları: Git & GitHub Sertifikası" />
             </div>
-            <h4>Programlama Araçları: Git &amp; GitHub</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="Programlama Araçları: Git &amp; GitHub" data-en="Development Tools: Git &amp; GitHub">Programlama Araçları: Git &amp; GitHub</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 5 -->
@@ -308,8 +323,8 @@
               <img src="foto/Yunus Emre Kurtuluş - JavaScript - JSON  AJAX ve WebApi Kullanımı.jpg"
                 alt="JavaScript: JSON, AJAX ve WebApi Sertifikası" />
             </div>
-            <h4>JavaScript: JSON, AJAX ve WebApi</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="JavaScript: JSON, AJAX ve WebApi" data-en="JavaScript: JSON, AJAX & WebApi">JavaScript: JSON, AJAX ve WebApi</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 6 -->
@@ -318,8 +333,8 @@
               <img src="foto/Yunus Emre Kurtuluş - Programlama ve Algoritma Console Programming.jpg"
                 alt="Programlama ve Algoritma: Console Programming Sertifikası" />
             </div>
-            <h4>Programlama ve Algoritma: Console Programming</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="Programlama ve Algoritma: Console Programming" data-en="Programming & Algorithms: Console Programming">Programlama ve Algoritma: Console Programming</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 7 (gizli) -->
@@ -329,7 +344,7 @@
                 alt="Frontend: JQUERY & AJAX Sertifikası" />
             </div>
             <h4>Frontend: JQUERY &amp; AJAX</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 8 (gizli) -->
@@ -338,8 +353,8 @@
               <img src="foto/Yunus Emre Kurtuluş - JavaScript - Nesneler.jpg"
                 alt="JavaScript: Nesneler (Objects) Sertifikası" />
             </div>
-            <h4>JavaScript: Nesneler (Objects)</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="JavaScript: Nesneler (Objects)" data-en="JavaScript: Objects">JavaScript: Nesneler (Objects)</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 9 (gizli) -->
@@ -348,8 +363,8 @@
               <img src="foto/Yunus Emre Kurtuluş - Yapay Zeka ile Hayatınızı Değiştirecek Yöntemler.jpg"
                 alt="Yapay Zeka ile Hayatınızı Değiştirecek Yöntemler Sertifikası" />
             </div>
-            <h4>Yapay Zeka ile Hayatınızı Değiştirecek Yöntemler</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="Yapay Zeka ile Hayatınızı Değiştirecek Yöntemler" data-en="Life-Changing Methods with Artificial Intelligence">Yapay Zeka ile Hayatınızı Değiştirecek Yöntemler</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 10 (gizli) -->
@@ -357,8 +372,8 @@
             <div class="cert-img-wrap" onclick="openCertLightbox(9)">
               <img src="foto/Yunus Emre Kurtuluş - İş İngilizcesi.jpg" alt="İş İngilizcesi Sertifikası" />
             </div>
-            <h4>İş İngilizcesi</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="İş İngilizcesi" data-en="Business English">İş İngilizcesi</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 11 (gizli) -->
@@ -367,8 +382,8 @@
               <img src="foto/Yunus Emre Kurtuluş - Skillsoft ile Liderlik - Kişisel Gelişim.jpg"
                 alt="Skillsoft ile Liderlik ve Kişisel Gelişim Sertifikası" />
             </div>
-            <h4>Skillsoft ile Liderlik ve Kişisel Gelişim</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="Skillsoft ile Liderlik ve Kişisel Gelişim" data-en="Leadership & Personal Development with Skillsoft">Skillsoft ile Liderlik ve Kişisel Gelişim</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 12 (gizli) -->
@@ -377,8 +392,8 @@
               <img src="foto/Yunus Emre Kurtuluş - Teknoloji Okuryazarlığı.jpg"
                 alt="Teknoloji Okuryazarlığı Sertifikası" />
             </div>
-            <h4>Teknoloji Okuryazarlığı</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="Teknoloji Okuryazarlığı" data-en="Technology Literacy">Teknoloji Okuryazarlığı</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 13 (gizli) -->
@@ -387,8 +402,8 @@
               <img src="foto/Yunus Emre Kurtuluş - Kendini İfade Etme Gücü Sessizlikleri Kır  Anla  Anlaşıl.jpg"
                 alt="Kendini İfade Etme Gücü Sertifikası" />
             </div>
-            <h4>Kendini İfade Etme Gücü</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="Kendini İfade Etme Gücü" data-en="The Power of Self-Expression">Kendini İfade Etme Gücü</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 14 (gizli) -->
@@ -397,8 +412,8 @@
               <img src="foto/Yunus Emre Kurtuluş - JavaScript - Nesneler (1).jpg"
                 alt="JavaScript: Nesneler - Temel Kavramlar Sertifikası" />
             </div>
-            <h4>JavaScript: Nesneler - Temel Kavramlar</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="JavaScript: Nesneler - Temel Kavramlar" data-en="JavaScript: Objects - Fundamentals">JavaScript: Nesneler - Temel Kavramlar</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
           <!-- Sertifika 15 (gizli) -->
@@ -407,15 +422,16 @@
               <img src="foto/Yunus Emre Kurtuluş - Programlama Araçları Git  GitHub (1).jpg"
                 alt="Git & GitHub: İleri Seviye Kullanım Sertifikası" />
             </div>
-            <h4>Git &amp; GitHub: İleri Seviye Kullanım</h4>
-            <p>Kurum Adı: Fibabanka Akademi</p>
+            <h4 data-tr="Git &amp; GitHub: İleri Seviye Kullanım" data-en="Git &amp; GitHub: Advanced Usage">Git &amp; GitHub: İleri Seviye Kullanım</h4>
+            <p data-tr="Kurum Adı: Fibabanka Akademi" data-en="Institution: Fibabanka Academy">Kurum Adı: Fibabanka Akademi</p>
           </div>
 
         </div>
 
         <!-- Toggle Button -->
         <div class="certs-toggle-wrap reveal">
-          <button class="btn btn-certs-toggle" id="certsToggleBtn" onclick="toggleCerts()">
+          <button class="btn btn-certs-toggle" id="certsToggleBtn" onclick="toggleCerts()"
+            data-tr="Daha Fazla Sertifika Gör 📜" data-en="Show More Certificates 📜">
             Daha Fazla Sertifika Gör 📜
           </button>
         </div>
@@ -428,11 +444,11 @@
   <!-- ========== FOOTER / İLETİŞİM ========== -->
   <footer class="footer" id="iletisim">
     <div class="container">
-      <h2 class="section-title reveal" style="font-size: 1.8rem;">İletişim</h2>
+      <h2 class="section-title reveal" style="font-size: 1.8rem;" data-tr="İletişim" data-en="Contact">İletişim</h2>
 
 
       <div class="footer-links reveal">
-        <a href="mailto:yunusemre.kurtulus2003@gmail.com">📧 E-posta</a>
+        <a href="mailto:yunusemre.kurtulus2003@gmail.com" data-tr="📧 E-posta" data-en="📧 Email">📧 E-posta</a>
         <a href="https://www.linkedin.com/in/yunus-emre-kurtuluş-4a4310292?utm_source=share_via&utm_content=profile&utm_medium=member_android"
           target="_blank" rel="noopener">💼 LinkedIn</a>
       </div>
