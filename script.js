@@ -3,7 +3,8 @@
    Handles: Scroll Reveal, Navbar,
    Mobile Menu, Smooth Interactions,
    Card Auto-Slider, Lightbox Gallery,
-   Certificate Toggle & Lightbox
+   Certificate Toggle & Lightbox,
+   Language Toggle (TR/EN)
    ============================================ */
 
 // ---- Project gallery data (used by lightbox) ----
@@ -166,15 +167,24 @@ function lightboxNext() {
 function toggleCerts() {
   const certsGrid = document.getElementById('certsGrid');
   const toggleBtn = document.getElementById('certsToggleBtn');
+  const currentLang = localStorage.getItem('siteLang') || 'tr';
 
   if (certsGrid.classList.contains('show-all-certs')) {
     // Collapse — hide extra certs
     certsGrid.classList.remove('show-all-certs');
-    toggleBtn.textContent = 'Daha Fazla Sertifika Gör 📜';
+    if (currentLang === 'tr') {
+      toggleBtn.textContent = 'Daha Fazla Sertifika Gör 📜';
+    } else {
+      toggleBtn.textContent = 'Show More Certificates 📜';
+    }
   } else {
     // Expand — show all certs
     certsGrid.classList.add('show-all-certs');
-    toggleBtn.textContent = 'Daha Az Göster ⬆️';
+    if (currentLang === 'tr') {
+      toggleBtn.textContent = 'Daha Az Göster ⬆️';
+    } else {
+      toggleBtn.textContent = 'Show Less ⬆️';
+    }
 
     // Trigger reveal for newly visible cert cards
     const hiddenCards = certsGrid.querySelectorAll('.hidden-cert.reveal:not(.visible)');
@@ -183,6 +193,100 @@ function toggleCerts() {
         card.classList.add('visible');
       });
     }, 100);
+  }
+}
+
+
+// ============================================
+//   LANGUAGE TOGGLE (TR / EN)
+// ============================================
+
+// Get stored language or default to Turkish
+let currentLanguage = localStorage.getItem('siteLang') || 'tr';
+
+/**
+ * Apply the given language to all elements with data-tr / data-en attributes.
+ * Updates innerHTML for elements that use &amp; entities, textContent for the rest.
+ */
+function applyLanguage(lang) {
+  currentLanguage = lang;
+  localStorage.setItem('siteLang', lang);
+
+  // Update html lang attribute
+  document.documentElement.lang = lang === 'tr' ? 'tr' : 'en';
+
+  // Update page title
+  document.title = lang === 'tr'
+    ? 'Portfolyo | Yunus Emre Kurtuluş'
+    : 'Portfolio | Yunus Emre Kurtuluş';
+
+  // Update meta description
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    metaDesc.setAttribute('content', lang === 'tr'
+      ? 'Yunus Emre Kurtuluş — Kişisel portfolyo ve CV sitesi. Projeler, sertifikalar ve daha fazlası.'
+      : 'Yunus Emre Kurtuluş — Personal portfolio and CV website. Projects, certificates, and more.'
+    );
+  }
+
+  // Find all elements with data-tr and data-en attributes
+  const translatableElements = document.querySelectorAll('[data-tr][data-en]');
+
+  translatableElements.forEach(el => {
+    const text = el.getAttribute(`data-${lang}`);
+    if (text !== null) {
+      // Use innerHTML to preserve HTML entities like &amp;
+      el.innerHTML = text;
+    }
+  });
+
+  // Update the language toggle switch
+  const langSwitch = document.getElementById('langToggle');
+  const langTR = document.getElementById('langTR');
+  const langEN = document.getElementById('langEN');
+
+  if (langSwitch && langTR && langEN) {
+    langSwitch.setAttribute('data-lang', lang);
+    if (lang === 'tr') {
+      langTR.classList.add('active');
+      langEN.classList.remove('active');
+    } else {
+      langEN.classList.add('active');
+      langTR.classList.remove('active');
+    }
+  }
+
+  // Update the certs toggle button text based on current state
+  const certsGrid = document.getElementById('certsGrid');
+  const toggleBtn = document.getElementById('certsToggleBtn');
+  if (certsGrid && toggleBtn) {
+    if (certsGrid.classList.contains('show-all-certs')) {
+      toggleBtn.textContent = lang === 'tr' ? 'Daha Az Göster ⬆️' : 'Show Less ⬆️';
+    } else {
+      toggleBtn.textContent = lang === 'tr' ? 'Daha Fazla Sertifika Gör 📜' : 'Show More Certificates 📜';
+    }
+  }
+}
+
+/**
+ * Toggle between TR and EN languages.
+ */
+function toggleLanguage() {
+  const newLang = currentLanguage === 'tr' ? 'en' : 'tr';
+  applyLanguage(newLang);
+
+  // Add pulse animation to the toggle button
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.classList.remove('pulse');
+    // Force reflow to restart animation
+    void langToggle.offsetWidth;
+    langToggle.classList.add('pulse');
+
+    // Remove animation class after it finishes
+    setTimeout(() => {
+      langToggle.classList.remove('pulse');
+    }, 600);
   }
 }
 
@@ -466,6 +570,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }, { passive: true });
+
+
+  // ---------- 10. LANGUAGE TOGGLE ----------
+  const langToggleBtn = document.getElementById('langToggle');
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', toggleLanguage);
+  }
+
+  // Apply saved language on page load
+  applyLanguage(currentLanguage);
 
 
   // Initial calls
